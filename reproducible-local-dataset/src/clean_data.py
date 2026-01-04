@@ -81,6 +81,13 @@ def main() -> int:
     df23.to_csv(out_dir / "records_2023_clean.csv", index=False)
     df_all.to_csv(out_dir / "records_all_clean.csv", index=False)
 
+    df_all.to_json(
+    out_dir / "records_all_clean.json",
+    orient="records",
+    indent=2
+    )
+
+
     print("CLEAN OK")
     return 0
 
