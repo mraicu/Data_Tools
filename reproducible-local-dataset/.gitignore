@@ -1,22 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env/
+
 # OS
 .DS_Store
 Thumbs.db
 
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.env
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Build artifacts
-reports/*.html
-reports/*.pdf
-reports/figures/*.png
-
-# Data products (keep raw local; avoid committing large derived artifacts)
-data/interim/
-data/processed/
+data/processed/*
+data/interim/*
+!data/processed/.gitkeep
+!data/interim/.gitkeep
