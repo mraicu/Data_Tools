@@ -20,20 +20,6 @@ automation, and is intended for internal research or operational use.
 -   `docs/`: Dataset documentation (data dictionary, metadata)
 -   `reports/`: Generated tables, figures, and short written report
 
-## Reproducibility Instructions
-
-1. Clone the repository locally.
-2. Create the Python environment:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-Place the provided datasets into data/raw/.
-
-Run the pipeline:
-
-`make all`
-
 ## How to run
 
 > Commands assume you have Python installed and are running from the project root.
@@ -41,7 +27,7 @@ Run the pipeline:
 1. Create and activate a virtual environment (Windows PowerShell):
 
 ```powershell
-python -m venv .venv
+py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
@@ -55,8 +41,9 @@ pip install -r requirements.txt
 
 Using Snakefile from roots:
 
-````powershell
-snakemake -c1 -s workflows/Snakefile```
+```powershell
+snakemake -c1 -s workflows/Snakefile
+```
 
 ## Data handling rules
 
@@ -67,4 +54,3 @@ Contact
 
 Maintainer: M. R.
 Date: 2026-01-04
-````
