@@ -1,0 +1,11 @@
+year,status,n_records
+2022,cancelled,197
+2022,ok,284
+2022,pending,232
+2022,rejected,224
+2022,review,215
+2023,cancelled,252
+2023,ok,290
+2023,pending,254
+2023,rejected,281
+2023,review,271

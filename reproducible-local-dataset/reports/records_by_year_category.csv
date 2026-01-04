@@ -1,0 +1,23 @@
+year,category,n_records
+2022,admission,157
+2022,billing,178
+2022,discharge,166
+2022,follow-up,44
+2022,follow_up,126
+2022,imaging,145
+2022,lab test,8
+2022,lab_test,114
+2022,labtest,29
+2022,medication,117
+2022,transfer,140
+2023,admission,206
+2023,billing,197
+2023,discharge,153
+2023,follow-up,38
+2023,follow_up,139
+2023,imaging,179
+2023,lab test,9
+2023,lab_test,138
+2023,labtest,30
+2023,medication,166
+2023,transfer,173

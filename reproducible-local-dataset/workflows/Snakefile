@@ -1,0 +1,27 @@
+rule all:
+    input:
+        "reports/report.md"
+
+rule validate:
+    input:
+        "data/raw/records_2022.csv",
+        "data/raw/records_2023.csv"
+    shell:
+        "python src/validate_raw.py"
+
+rule clean:
+    input:
+        "data/raw/records_2022.csv",
+        "data/raw/records_2023.csv"
+    output:
+        "data/processed/records_all_clean.csv"
+    shell:
+        "python src/clean_data.py"
+
+rule report:
+    input:
+        "data/processed/records_all_clean.csv"
+    output:
+        "reports/report.md"
+    shell:
+        "python src/analyze_report.py"
