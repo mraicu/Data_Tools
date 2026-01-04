@@ -13,12 +13,11 @@ automation, and is intended for internal research or operational use.
 ## Folder Structure
 
 -   `data/raw/`: Original datasets provided by the instructor (unchanged)
--   `data/interim/`: Optional intermediate files created during processing
 -   `data/processed/`: Cleaned and harmonized datasets
 -   `src/`: Python scripts for cleaning, validation, and analysis
 -   `workflows/`: Reproducible pipeline (Makefile or Snakefile)
 -   `docs/`: Dataset documentation (data dictionary, metadata)
--   `reports/`: Generated tables, figures, and short written report
+-   `reports/`: Generated tables and short written report
 
 ## How to run
 
