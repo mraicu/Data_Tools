@@ -51,29 +51,12 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-3. Run the pipeline (choose one workflow approach; you will implement in Task 6.5):
+3. Run the pipeline:
 
-Using Make:
+Using Snakefile from roots:
 
-```powershell
-make all
-```
-
-## Expected outputs
-
-After running the pipeline, you should expect:
-
-`data/processed/records_harmonized.csv`
-
--   Cleaned and harmonized records across 2022–2023.
-
-`reports/summary_table.csv`
-
--   Basic counts by category/status/year, missingness stats, etc.
-
-`reports/report.md`
-
--   Short reproducible report referencing the generated outputs.
+````powershell
+snakemake -c1 -s workflows/Snakefile```
 
 ## Data handling rules
 
@@ -84,3 +67,4 @@ Contact
 
 Maintainer: M. R.
 Date: 2026-01-04
+````
