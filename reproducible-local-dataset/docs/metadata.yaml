@@ -1,0 +1,31 @@
+title: Internal Records Dataset (2022–2023)
+description: >
+    Local internal dataset containing operational records for research and
+    reproducible data management training purposes.
+
+source:
+    organization: Internal Systems Export
+    method: Manual and automated system extraction
+
+time_coverage:
+    start_date: 2022-01-01
+    end_date: 2023-12-31
+
+update_frequency: One-time historical extract
+
+license: Internal use only
+usage_constraints:
+    - Do not redistribute outside the organization
+    - Do not upload to public repositories
+    - Use only for internal research or training
+
+data_sensitivity: Sensitive operational data (de-identified)
+
+contact:
+    role: Data Steward
+    email: data-steward@internal.example
+
+formats:
+    - CSV
+
+language: en
