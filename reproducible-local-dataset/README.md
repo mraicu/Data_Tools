@@ -37,7 +37,9 @@ py -m venv .venv
 pip install -r requirements.txt
 ```
 
-3. Run the pipeline:
+3. Create data/raw directory and upload the dataset there
+
+4. Run the pipeline:
 
 Using Snakefile from roots:
 
@@ -49,6 +51,12 @@ snakemake -c1 -s workflows/Snakefile
 
 -   Keep raw files unchanged in data/raw/.
 -   Do not commit raw data to Git.
+
+## Versioning and Releases
+
+The final, graded submission of this project is tagged as **v1.0** in Git.
+All results, documentation, and outputs in this repository are reproducible
+from this tagged version.
 
 Contact
 

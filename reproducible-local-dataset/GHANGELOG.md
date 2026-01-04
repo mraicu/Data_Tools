@@ -1,34 +1,30 @@
-# Integrity Notes (Checksums)
+# Changelog
 
-This project uses SHA-256 checksums to detect accidental changes or corruption in the
-raw input dataset located in `data/raw/`.
+All notable changes to this project are documented in this file.
+This project follows a simple Keep-a-Changelog style for internal use.
 
-## Where the manifest is stored
+## [v1.0] - 2026-01-04
 
--   `docs/checksums.sha256`
+### Added
 
-Each line contains:
+-   Reproducible Snakemake pipeline for validation, cleaning, and reporting.
+-   Dataset documentation including README, data dictionary, and metadata.
+-   SHA-256 checksum manifest and integrity verification notes.
+-   Command-line dataset exploration notes.
+-   JSON export of cleaned data in addition to CSV.
 
--   SHA-256 hash
--   relative file path (e.g., `data/raw/records_2022.csv`)
+### Changed
 
-## How to verify checksums (Windows PowerShell)
+-   Harmonized 2022 and 2023 schemas (`source` → `source_system`).
+-   Normalized casing for categorical fields and standardized date parsing.
 
-From the project root, run:
+### Fixed
 
-```powershell
-Get-Content docs/checksums.sha256 | ForEach-Object {
-  if ($_ -match '^([0-9a-f]{64})\s+(.+)$') {
-    $expected = $matches[1]
-    $path = $matches[2]
-    $actual = (Get-FileHash $path -Algorithm SHA256).Hash.ToLower()
-    if ($actual -eq $expected) {
-      "OK  $path"
-    } else {
-      "FAIL  $path"
-      "  expected: $expected"
-      "  actual:   $actual"
-    }
-  }
-}
-```
+-   Handling of missing numeric values and inconsistent whitespace.
+-   Validation checks for schema mismatches and invalid values.
+
+## [Unreleased]
+
+### Added
+
+-   Placeholder for future updates and extensions.
